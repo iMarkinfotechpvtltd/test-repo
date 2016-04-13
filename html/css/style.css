@@ -1,0 +1,1048 @@
+/*****  Fonts  *****/
+
+@font-face {
+    font-family: 'mastoc_personal_use_onlyRg';
+    src: url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.eot');
+    src: url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.woff2') format('woff2'), url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.woff') format('woff'), url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.ttf') format('truetype'), url('../fonts/mastoc-personaluseonly/mastoc_personaluseonly-webfont.svg#mastoc_personal_use_onlyRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+
+font-family: 'mastoc_personal_use_onlyRg';
+
+font-family: 'Open Sans', sans-serif;
+
+font-family: 'Lato', sans-serif;
+
+*/
+
+
+/*****  Global Style  *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: normal;
+}
+
+h1 {
+    font-size: 84px;
+    font-weight: 800;
+    color: #ffc000;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 80px;
+}
+
+h3 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #691c24;
+    font-style: italic;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #691c24;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h4 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #691c24;
+    font-style: italic;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+h4::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #691c24;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+h5 {
+    font-family: 'mastoc_personal_use_onlyRg';
+    font-size: 30px;
+    color: #5a141b;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+a,
+i.icons,
+button,
+input[type="submit"],
+.overlay {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a,
+a:focus {
+    text-decoration: none;
+}
+
+a {
+    color: #ffc000;
+}
+
+a:hover,
+a:focus {
+    color: #2b2b2b;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+    font-family: 'Lato', sans-serif;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+
+/*****  Main CSS  *****/
+
+.main {
+    width: 100%;
+    overflow: hidden;
+}
+
+.pull-center {
+    display: inline-block;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    float: none;
+}
+
+.icons,
+.banner-qoute .text p:first-child::before,
+.banner-qoute .text p:last-child::after,
+.list-icon1 ul li::after,
+.list-icon2 ul li::after {
+    background: url("../images/icons.png") no-repeat;
+}
+
+.icons {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*****  Header  *****/
+
+header {
+    background-color: transparent;
+    border-bottom: 1px solid #7e313e;
+    left: 0;
+    min-height: 81px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 21px 0 11px;
+}
+
+.social {
+    float: left;
+    margin: 7px 0 0;
+}
+
+.social ul {
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    margin: 0;
+}
+
+.social ul li {
+    float: left;
+    margin-right: 23px;
+}
+
+.social ul li a {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    color: #ffffff;
+    display: block;
+    font-size: 12px;
+    height: 33px;
+    padding: 7px 1px;
+    text-align: center;
+    width: 33px;
+}
+
+.social ul li a:hover,
+.social ul li a:focus {
+    background-color: #ffc000;
+    border-color: #ffc000;
+    color: #2b2b2b;
+}
+
+.social ul li a i {
+    margin: 0;
+}
+
+.top-no {
+    background-color: #ffc000;
+    border-radius: 100px;
+    color: #9e6400;
+    display: block;
+    float: right;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.top-no:hover,
+.top-no:focus {
+    background-color: #2b2b2b;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*****  Banner  *****/
+
+.banner {
+    margin-bottom: 130px;
+    position: relative;
+    text-align: center;
+}
+
+.banner::after {
+    content: "";
+    background: url("../images/banner-bg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    position: absolute;
+    top: 0;
+    bottom: -170px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner-inner {
+    background: url("../images/banner-bg1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 81px;
+}
+
+.banner-qoute {
+    position: relative;
+}
+
+.banner-qoute figure {
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    float: left;
+    height: 125px;
+    overflow: hidden;
+    width: 125px;
+}
+
+.banner-qoute figure img {
+    border-radius: 100px;
+}
+
+.banner-qoute .text {
+    font-family: 'mastoc_personal_use_onlyRg';
+    font-size: 43px;
+    line-height: 48px;
+    font-weight: 400;
+    color: #ffc000;
+    margin-left: 170px;
+    text-align: left;
+    position: relative;
+}
+
+.banner-qoute .text small {
+    font-size: 100%;
+    color: #fff;
+}
+
+.banner-qoute .text p {
+    position: relative;
+}
+
+.banner-qoute .text p:first-child::before {
+    background-position: 0 0;
+    content: "";
+    height: 11px;
+    left: -16px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+}
+
+.banner-qoute .text p:last-child::after {
+    background-position: -43px 0;
+    border: 0 none;
+    bottom: 4px;
+    content: "";
+    height: 11px;
+    margin-left: 5px;
+    position: absolute;
+    right: inherit;
+    width: 15px;
+}
+
+
+/*****  Is This You Area  *****/
+
+.is-this-you-area {
+    padding: 0 0 54px;
+}
+
+.is-this-you-area-inner {
+    position: relative;
+}
+
+.is-this-you-img {
+    max-width: 34%;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: -60px;
+    width: 100%;
+}
+
+.is-this-you-area h3 {
+    float: left;
+    margin-bottom: 35px;
+    padding-bottom: 0;
+}
+
+.is-this-you-area h3::after {
+    right: 33px;
+    width: auto;
+}
+
+.is-this-you-area h3 img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -7px;
+}
+
+.list-icon1 {
+    clear: both;
+}
+
+.list-icon1 ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.list-icon1 ul li {
+    position: relative;
+    font-size: 31px;
+    line-height: 62px;
+    font-weight: 400;
+    padding-left: 48px;
+}
+
+.list-icon1 ul li::after {
+    background-position: 0 -50px;
+    content: "";
+    height: 17px;
+    left: 0;
+    position: absolute;
+    top: 23px;
+    width: 18px;
+}
+
+
+/*****  Best Weight Loss Choices Area  *****/
+
+.bwlc-area {
+    background-color: #fbfbfb;
+    padding: 40px 0 75px;
+}
+
+.bwlc-area-inner {}
+
+.bwlc-area h4 {
+    margin: 0 0 35px;
+    max-width: 630px;
+}
+
+.bwlc-area h4::after {
+    width: 238px;
+}
+
+.bwlc-area .list-icon1 ul li {
+    font-size: 23px;
+    line-height: 46px;
+    padding-left: 40px;
+}
+
+.bwlc-area .list-icon1 ul li::after {
+    top: 14px;
+}
+
+
+/*****  Weight Loss Guidelines Area  *****/
+
+.wlg-area {
+    padding: 60px 0;
+}
+
+.wlg-area-inner {}
+
+.wlg-area h4 {
+    margin: 0 0 35px;
+    max-width: 1000px;
+}
+
+.wlg-area h4::after {
+    width: 194px;
+}
+
+.list-icon2 {
+    clear: both;
+}
+
+.list-icon2 ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+
+.list-icon2 ul li {
+    position: relative;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 400;
+    padding-left: 56px;
+}
+
+.list-icon2 ul li::after {
+    background-position: 0 -100px;
+    content: "";
+    height: 13px;
+    left: 0;
+    position: absolute;
+    top: 18px;
+    width: 11px;
+}
+
+.wlg-area .wlg-img {
+    text-align: right;
+}
+
+
+/*****  Free Report Area  *****/
+
+.free-report-area {
+    padding: 42px 0 50px;
+}
+
+.free-report-area-inner {}
+
+.free-report-form {
+    background: #ffffff;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0OCUiIHN0b3AtY29sb3I9IiNmNGY0ZjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZTBlMGUwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #f4f4f4 48%, #e0e0e0 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #f4f4f4 48%, #e0e0e0 100%);
+    background: radial-gradient(ellipse at center, #ffffff 0%, #f4f4f4 48%, #e0e0e0 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e0e0e0', GradientType=1);
+    border-radius: 25px;
+    padding: 0 38px 90px;
+    text-align: center;
+    position: relative;
+}
+
+.free-report-form::before {
+    content: "";
+    background: url("../images/free-report-bg.png");
+    background-repeat: no-repeat;
+    bottom: -50px;
+    height: 117px;
+    left: 50%;
+    margin-left: -352px;
+    position: absolute;
+    width: 705px;
+    z-index: -1;
+}
+
+.free-report-form::after {
+    content: "";
+    background: url("../images/free-report-bg1.png");
+    background-repeat: no-repeat;
+    bottom: -58px;
+    height: 151px;
+    position: absolute;
+    left: -48px;
+    width: 100%;
+}
+
+.free-report-form h3 {
+    background-position: 0 -146px;
+    color: #ffffff;
+    font-size: 41px;
+    font-style: normal;
+    height: 117px;
+    margin-top: -32px;
+    padding: 18px 0;
+    text-transform: uppercase;
+    width: 335px;
+}
+
+.free-report-form h3::after {
+    display: none;
+}
+
+.free-report-form h5 {
+    border-bottom: 1px solid #c2c2c2;
+    margin-top: 2px;
+    padding-bottom: 6px;
+}
+
+.note {
+    font-size: 27px;
+    font-style: italic;
+    margin: 10px 0 40px;
+}
+
+.free-report-form .form-field {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.free-report-form .form-control {
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    height: 80px;
+    width: 100%;
+    font-size: 22px;
+    color: #adadad;
+    padding: 10px 35px;
+    margin-bottom: 15px;
+}
+
+.free-report-form .form-control::-moz-placeholder {
+    color: #adadad;
+    opacity: 1;
+}
+
+.free-report-form .form-control:-ms-input-placeholder {
+    color: #adadad;
+}
+
+.free-report-form .form-control::-webkit-input-placeholder {
+    color: #adadad;
+}
+
+.free-report-form .form-control:focus {
+    border-color: #1762c8;
+}
+
+.arrow-icon {
+    background-position: 0 -301px;
+    content: "";
+    height: 80px;
+    position: absolute;
+    right: -68px;
+    top: 50%;
+    width: 52px;
+}
+
+.btn-yellow {
+    background-color: #ffc000;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 32px;
+    font-weight: 800;
+    color: #b65a00;
+    line-height: normal;
+    border: 1px solid #edb800;
+    border-radius: 200px;
+    width: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    margin: 10px 0;
+    min-height: 85px;
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    background-color: #5a141b;
+    border-color: #4e0c13;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-yellow:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
+.btn-yellow:hover:after {
+    width: 120%;
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.free-report-img {
+    padding: 0 0 0 16.6666%;
+}
+
+.free-report-img figure {
+    padding: 22px 0;
+    position: relative;
+    margin-top: 70px;
+}
+
+.free-report-img figure::after {
+    border: 3px solid #702528;
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+}
+
+.free-report-img figure img {
+    width: 100%;
+}
+
+
+/*****  Footer  *****/
+
+footer.footer {
+    background-color: #460a03;
+    margin-top: 200px;
+    position: relative;
+}
+
+footer.footer::after {
+    background-color: #460a03;
+    content: "";
+    height: 212px;
+    left: 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: -100px;
+    width: 102%;
+    z-index: -1;
+    -webkit-transform: skewY(-174deg);
+    -moz-transform: skewY(-174deg);
+    -ms-transform: skewY(-174deg);
+    -o-transform: skewY(-174deg);
+    transform: skewY(-174deg);
+}
+
+.widgets {
+    position: relative;
+    margin-top: -65px;
+    padding-bottom: 70px
+}
+
+.footer-img {
+    max-width: 25%;
+    position: absolute;
+    right: 0;
+    top: -202px;
+}
+
+.widget-box {}
+
+.widget-box h6 {
+    margin-bottom: 25px;
+}
+
+.widget-box a {
+    font-size: 20px;
+    color: #fff;
+    font-style: italic;
+}
+
+.widget-box a:hover,
+.widget-box a:focus {
+    text-decoration: none;
+    color: #ffc000;
+}
+
+.widget-box a i {
+    vertical-align: middle;
+    margin: -2px 14px 0 0;
+}
+
+.widget-box .social {
+    margin: 0;
+}
+
+.widget-box .social ul li a {
+    height: 25px;
+    padding: 1px;
+    width: 25px;
+}
+
+.footer-inner {
+    border-top: 1px solid #620a00;
+    padding: 22px 0 20px;
+    text-align: center;
+}
+
+.footer-menu {
+    text-align: center;
+}
+
+.footer-menu ul {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-menu ul li {
+    position: relative;
+    float: left;
+    padding: 0 5px;
+}
+
+.footer-menu ul li::after {
+    background-color: #ffffff;
+    content: "";
+    height: 14px;
+    position: absolute;
+    right: -1px;
+    top: 6px;
+    width: 1px;
+}
+
+.footer-menu ul li a,
+.copyright {
+    font-size: 14px;
+    line-height: 24px;
+    font-style: italic;
+    color: #fff;
+}
+
+.footer-menu ul li a:hover,
+.footer-menu ul li a:focus {
+    text-decoration: none;
+    color: #ffc000;
+}
+
+
+/**********  Responsive  **********/
+
+@media (min-width: 1500px) {
+    .container {
+        width: 1470px;
+    }
+}
+
+@media (max-width: 1499px) {
+    h1 {
+        font-size: 64px;
+        line-height: 65px;
+    }
+    h2 {
+        font-size: 50px;
+        line-height: 65px;
+    }
+    h3 {
+        font-size: 48px;
+    }
+    h4 {
+        font-size: 35px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    /*****  Header  *****/
+    header {}
+    .social {}
+    .social ul {}
+    .social ul li {}
+    .social ul li a {}
+    .social ul li a:hover,
+    .social ul li a:focus {}
+    .social ul li a i {}
+    .top-no {}
+    .top-no:hover,
+    .top-no:focus {}
+    /*****  Banner  *****/
+    .banner {}
+    .banner::after {}
+    .banner-inner {}
+    .banner-qoute {}
+    .banner-qoute figure {}
+    .banner-qoute figure img {}
+    .banner-qoute .text {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .banner-qoute .text small {}
+    .banner-qoute .text p {}
+    .banner-qoute .text p:first-child::before {}
+    .banner-qoute .text p:last-child::after {}
+    /*****  Is This You Area  *****/
+    .is-this-you-area {}
+    .is-this-you-area-inner {}
+    .is-this-you-img {}
+    .is-this-you-area h3 {
+        margin-bottom: 28px;
+    }
+    .is-this-you-area h3::after {
+        right: 30px;
+    }
+    .is-this-you-area h3 img {
+        max-width: 60px;
+    }
+    .list-icon1 {}
+    .list-icon1 ul {}
+    .list-icon1 ul li {
+        font-size: 24px;
+        line-height: 48px;
+    }
+    .list-icon1 ul li::after {
+        top: 15px;
+    }
+    /*****  Best Weight Loss Choices Area  *****/
+    .bwlc-area {
+        padding-bottom: 60px;
+    }
+    .bwlc-area-inner {}
+    .bwlc-img {
+        max-width: 260px;
+    }
+    .bwlc-area h4 {
+        margin-bottom: 28px;
+        max-width: 490px;
+    }
+    .bwlc-area h4::after {
+        width: 186px;
+    }
+    .bwlc-area .list-icon1 ul li {
+        font-size: 18px;
+        line-height: 36px;
+    }
+    .bwlc-area .list-icon1 ul li::after {
+        top: 9px;
+    }
+    /*****  Weight Loss Guidelines Area  *****/
+    .wlg-area {
+        padding: 50px 0;
+    }
+    .wlg-area-inner {}
+    .wlg-area h4 {
+        margin-bottom: 28px;
+    }
+    .wlg-area h4::after {
+        width: 152px;
+    }
+    .list-icon2 {}
+    .list-icon2 ul {}
+    .list-icon2 ul li {
+        font-size: 18px;
+        line-height: 36px;
+        padding-left: 50px;
+    }
+    .list-icon2 ul li::after {
+        top: 12px;
+    }
+    .wlg-area .wlg-img {
+        max-width: 180px;
+    }
+    /*****  Free Report Area  *****/
+    .free-report-area {}
+    .free-report-area-inner {}
+    .free-report-form {
+        padding: 0 35px 75px;
+    }
+    .free-report-form::before {
+        background-size: 560px auto;
+        bottom: -30px;
+        height: 90px;
+        margin-left: -280px;
+    }
+    .free-report-form::after {
+        background-size: 280px auto;
+        bottom: -75px;
+        left: -34px;
+    }
+    .free-report-form h3 {
+        background-position: 0 -130px;
+        background-size: 350px auto;
+        font-size: 32px;
+        height: 100px;
+        margin-top: -26px;
+        width: 293px;
+    }
+    .free-report-form h3::after {}
+    .free-report-form h5 {}
+    .note {
+        font-size: 21px;
+        margin: 10px 0 30px;
+    }
+    .free-report-form .form-field {
+        margin-bottom: 35px;
+    }
+    .free-report-form .form-control {
+        font-size: 18px;
+        height: 65px;
+        padding: 10px 28px;
+    }
+    .arrow-icon {
+        background-position: 0 -263px;
+        background-size: 350px auto;
+        height: 70px;
+        right: -61px;
+        width: 46px;
+    }
+    .btn-yellow {
+        font-size: 24px;
+        min-height: 65px;
+        padding: 10px 30px;
+    }
+    .btn-yellow:hover,
+    .btn-yellow:focus {}
+    .btn-yellow:after {}
+    .btn-yellow:hover:after {}
+    .free-report-img {}
+    .free-report-img figure {
+        margin-top: 60px;
+    }
+    .free-report-img figure::after {}
+    .free-report-img figure img {}
+    /*****  Footer  *****/
+    footer.footer {}
+    footer.footer::after {}
+    .widgets {
+        padding-bottom: 60px;
+    }
+    .footer-img {
+        top: -173px;
+    }
+    .widget-box {}
+    .widget-box h6 {
+        margin-bottom: 20px;
+    }
+    .widget-box a {
+        font-size: 18px;
+    }
+    .widget-box a:hover,
+    .widget-box a:focus {}
+    .widget-box a i {}
+    .widget-box .social {}
+    .widget-box .social ul li a {}
+    .footer-inner {
+        padding: 20px 0;
+    }
+    .footer-menu {}
+    .footer-menu ul {}
+    .footer-menu ul li {}
+    .footer-menu ul li::after {}
+    .footer-menu ul li a,
+    .copyright {}
+    .footer-menu ul li a:hover,
+    .footer-menu ul li a:focus {}
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 479px) {}
